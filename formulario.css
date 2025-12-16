@@ -1,122 +1,50 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #2e2e2e;
-    color: #f8f8f8;
+    background-color: #2e2e2e !important; /* Cor de fundo escura */
 }
 
-.product-row-bg {
-    background-color: #3f3f3f;
+/* Estilização do Card */
+.login-card {
+    background-color: #3f3f3f34; /* Cor do fundo do card */
     border-radius: 12px;
+    padding: 20px;
+    max-width: 400px; /* Largura máxima do card */
+    width: 190%;
+    border: none;
 }
 
-.product-page {
-    max-width: 1200px;
+/* Estilização dos Inputs */
+.custom-input {
+    background-color: white; 
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    height: 50px;
+    color: black;
+    font-size: 1rem;
 }
 
-/* NOME DO PRODUTO */
-.product-name {
-    color: #ffffff;
-    font-weight: 700;
-}
-
-/* TEXTOS SECUNDÁRIOS */
-.text-muted {
-    color: #b0b0b0 !important;
-}
-
-/* SEÇÃO DE PREÇO */
-.old-price {
-    font-size: 1.2rem;
-    color: #b0b0b0;
-    text-decoration: line-through;
-    display: block;
-}
-
-.new-price {
-    color: #dc3545;
-    font-size: 2.8rem;
-    font-weight: 800;
-    display: block;
-    line-height: 1;
-}
-
-.installment-info {
-    font-size: 0.9rem;
+/* Placeholder (texto dentro do input) */
+.custom-input::placeholder {
     color: #999;
 }
 
-/* BOTÃO DE CASHBACK */
-.btn-success-light {
-    background-color: #28a745; /* Verde para destacar a vantagem */
-    border-color: #28a745;
-    color: white;
+/* Estilização do Título */
+.login-card h3 {
+    color: white !important;
+    font-weight: 600;
 }
 
-.btn-success-light:hover {
-    background-color: #1e7e34;
-    border-color: #1e7e34;
-    color: white;
-}
-
-/* BOTÃO PRINCIPAL (ADICIONAR AO CARRINHO) */
+/* Estilização do Botão Vermelho */
 .btn-red {
-    background-color: #dc3545; /* Vermelho do botão Entrar */
+    background-color: #dc3545; /* Vermelho forte */
     border-color: #dc3545;
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding: 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
     color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-red:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Um pouco mais escuro ao passar o mouse */
     border-color: #c82333;
-    color: white;
-}
-
-/* BOTÕES E INPUTS DE OPÇÃO */
-
-/* Botões de Tamanho */
-.btn-outline-dark {
-    border-color: #666;
-    color: #f8f8f8;
-    background-color: transparent;
-}
-
-.btn-outline-dark:hover,
-.btn-outline-dark.selected-option {
-    background-color: #dc3545;
-    border-color: #dc3545;
-    color: white;
-}
-
-/* Botões de + e - */
-.dark-outline {
-    background-color: #4f4f4f; /* Fundo dos botões de controle de qtde */
-    border-color: #666;
-    color: #ccc;
-}
-.dark-outline:hover {
-    background-color: #5a5a5a;
-    color: white;
-}
-
-/* Input de Quantidade */
-.dark-input {
-    background-color: #333;
-    border-color: #666;
-    color: white;
-}
-
-/* Linha Separadora */
-.dark-hr {
-    border-top: 1px solid #444;
-}
-
-/* Informações Adicionais (Entrega) */
-.shipping-info {
-    background-color: #4a4a4a;
-    border: 1px solid #555 !important;
 }
